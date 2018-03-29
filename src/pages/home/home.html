@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>首页</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="list-ios">
+    <ion-item *ngFor="let item of listData">
+      <ion-avatar item-left>
+        <img src="./assets/icon/user.png">
+      </ion-avatar>
+      <h2>{{item?.name}}</h2>
+      <p>{{item?.email}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
