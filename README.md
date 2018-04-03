@@ -17,7 +17,7 @@ release-signing.properties
 ====================================
 key.store=tzky.keystore
 key.alias=tzky.keystore
-key.store.password=baiyfhvk1
+key.store.password=11111111
 ====================================
 
 ionic cordova build android --prod --release
