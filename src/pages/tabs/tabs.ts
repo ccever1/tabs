@@ -3,6 +3,7 @@ import { Platform, Tabs } from 'ionic-angular';
 
 import { HomePage } from '../home/home';
 import { SettingPage } from '../setting/setting';
+import { IndexPage } from '../index/index';
 import { BackButtonService } from "../../services/backButton.service";
 
 @Component({
@@ -16,9 +17,13 @@ export class TabsPage {
               private platform: Platform) {
     this.tabRoots = [
       {
-        root: HomePage,
-        tabTitle: 'Home',
+        root: IndexPage,
+        tabTitle: '首页',
         tabIcon: 'home'
+      },{
+        root: HomePage,
+        tabTitle: '资讯',
+        tabIcon: 'globe'
       },{
         root: SettingPage,
         tabTitle: '设置',

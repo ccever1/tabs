@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { SettingPage } from '../pages/setting/setting';
+import { IndexPage } from '../pages/index/index';
 import { BackButtonService } from '../services/backButton.service';
 import { HttpModule } from '@angular/http';
 
@@ -24,6 +25,7 @@ import { HttpModule } from '@angular/http';
     TabsPage,
     LoginPage,
     SettingPage,
+    IndexPage,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +41,7 @@ import { HttpModule } from '@angular/http';
     TabsPage,
     LoginPage,
     SettingPage,
+    IndexPage,
   ],
   providers: [
     StatusBar,
