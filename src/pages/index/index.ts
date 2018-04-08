@@ -21,5 +21,8 @@ export class IndexPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad IndexPage');
   }
-
+  logEvent(event) {
+    console.log(event)
+    alert('新闻');
+  }
 }
