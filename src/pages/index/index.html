@@ -57,93 +57,93 @@
             </ion-slide>
         </ion-slides>
     </div>
-    <ion-row class="row">
+
         <ion-slides pager="true" paginationType="bullets"
                     class="swiper-pagination-bullets slides-container">
             <ion-slide>
 
                 <ion-row>
                     <ion-col>
-                        <button  style="background:none;" (click)="logEvent($event)">
-                        <ion-img  src="./assets/icon/TV.png" class="align-center"></ion-img>
+                        <button style="background:none;" (click)="logEvent($event,1,{type:1, name: '今日头条' })">
+                            <ion-img src="./assets/icon/TV.png" class="align-center"></ion-img>
                             <div class="nav-title">今日头条</div>
                         </button>
                     </ion-col>
 
                     <ion-col>
-                        <button  style="background:none;">
-                        <ion-img  src="./assets/icon/Browser-Testing.png" class="align-center"></ion-img>
+                        <button style="background:none;" (click)="logEvent($event,1,{type:2, name: '最新公益' })">
+                            <ion-img src="./assets/icon/Browser-Testing.png" class="align-center"></ion-img>
+                            <div class="nav-title">最新公益</div>
+                        </button>
+                    </ion-col>
+
+                    <ion-col>
+                        <button style="background:none;" (click)="logEvent($event,1,{type:3, name: '公司简介' })">
+                            <ion-img src="./assets/icon/Coffee-Cup.png" class="align-center"></ion-img>
+                            <div class="nav-title">公司简介</div>
+                        </button>
+                    </ion-col>
+
+                    <ion-col>
+                        <button style="background:none;" (click)="logEvent($event,1,{type:4, name: '专家团队' })">
+                            <ion-img src="./assets/icon/Sticky-Notes.png" class="align-center"></ion-img>
+                            <div class="nav-title">专家团队</div>
+                        </button>
+                    </ion-col>
+
+                    <ion-col>
+                        <button style="background:none;" (click)="logEvent($event,1,{type:5, name: '最新动态' })">
+                            <ion-img src="./assets/icon/Camera.png" class="align-center"></ion-img>
+                            <div class="nav-title">最新动态</div>
+                        </button>
+                    </ion-col>
+
+                    <ion-col>
+                        <button style="background:none;" onclick="alert('点击事件')">
+                            <ion-img src="./assets/icon/Desk.png" class="align-center"></ion-img>
                             <div class="nav-title">今日头条</div>
                         </button>
                     </ion-col>
 
                     <ion-col>
-                        <button  style="background:none;">
-                        <ion-img  src="./assets/icon/Coffee-Cup.png" class="align-center"></ion-img>
-                            <div class="nav-title">今日头条</div>
-                        </button>
-                    </ion-col>
-
-                    <ion-col>
-                        <button  style="background:none;">
-                        <ion-img  src="./assets/icon/Sticky-Notes.png" class="align-center"></ion-img>
-                            <div class="nav-title">今日头条</div>
-                        </button>
-                    </ion-col>
-
-                    <ion-col>
-                        <button  style="background:none;">
-                        <ion-img  src="./assets/icon/Camera.png" class="align-center"></ion-img>
-                            <div class="nav-title">今日头条</div>
-                        </button>
-                    </ion-col>
-
-                    <ion-col>
-                        <button  style="background:none;">
-                        <ion-img  src="./assets/icon/Desk.png" class="align-center"></ion-img>
-                            <div class="nav-title">今日头条</div>
-                        </button>
-                    </ion-col>
-
-                    <ion-col>
-                        <button  style="background:none;">
-                        <ion-img  src="./assets/icon/Desktop.png" class="align-center"></ion-img>
+                        <button style="background:none;" onclick="alert('点击事件')">
+                            <ion-img src="./assets/icon/Desktop.png" class="align-center"></ion-img>
                             <div class="nav-title">最新公众号</div>
                         </button>
                     </ion-col>
 
                     <ion-col>
-                        <button  style="background:none;">
-                        <ion-img  src="./assets/icon/Office-Chair.png" class="align-center"></ion-img>
+                        <button style="background:none;" onclick="alert('点击事件')">
+                            <ion-img src="./assets/icon/Office-Chair.png" class="align-center"></ion-img>
                             <div class="nav-title">最资讯</div>
                         </button>
                     </ion-col>
 
                     <ion-col>
-                        <button  style="background:none;">
-                            <ion-img  src="./assets/icon/Briefcase.png" class="align-center"></ion-img>
+                        <button style="background:none;" onclick="alert('点击事件')">
+                            <ion-img src="./assets/icon/Briefcase.png" class="align-center"></ion-img>
                             <div class="nav-title">最资讯</div>
                         </button>
                     </ion-col>
 
                     <ion-col>
-                        <button  style="background:none;">
-                            <ion-img  src="./assets/icon/Tablet.png" class="align-center"></ion-img>
+                        <button style="background:none;" onclick="alert('点击事件')">
+                            <ion-img src="./assets/icon/Tablet.png" class="align-center"></ion-img>
                             <div class="nav-title">最资讯</div>
                         </button>
                     </ion-col>
 
                     <ion-col>
-                        <button  style="background:none;">
-                            <ion-img  src="./assets/icon/Cloud.png" class="align-center"></ion-img>
+                        <button style="background:none;" onclick="alert('点击事件')">
+                            <ion-img src="./assets/icon/Cloud.png" class="align-center"></ion-img>
                             <div class="nav-title">最资讯</div>
                         </button>
                     </ion-col>
 
 
                     <ion-col>
-                        <button  style="background:none;">
-                            <ion-img  src="./assets/icon/Signal.png" class="align-center"></ion-img>
+                        <button style="background:none;" onclick="alert('点击事件')">
+                            <ion-img src="./assets/icon/Signal.png" class="align-center"></ion-img>
                             <div class="nav-title">最资讯</div>
                         </button>
                     </ion-col>
@@ -152,42 +152,44 @@
 
             </ion-slide>
             <ion-slide>
+
                 <ion-row>
                     <ion-col>
-                        <button  style="background:none;" (click)="logEvent($event)">
-                            <ion-img  src="./assets/icon/TV.png" class="align-center"></ion-img>
+                        <button style="background:none;" onclick="alert('点击事件')">
+                            <ion-img src="./assets/icon/TV.png" class="align-center"></ion-img>
                             <div class="nav-title">今日头条</div>
                         </button>
                     </ion-col>
 
                     <ion-col>
-                        <button  style="background:none;">
-                            <ion-img  src="./assets/icon/Browser-Testing.png" class="align-center"></ion-img>
+                        <button style="background:none;" onclick="alert('点击事件')">
+                            <ion-img src="./assets/icon/Browser-Testing.png" class="align-center"></ion-img>
                             <div class="nav-title">今日头条</div>
                         </button>
                     </ion-col>
 
                     <ion-col>
-                        <button  style="background:none;">
-                            <ion-img  src="./assets/icon/Coffee-Cup.png" class="align-center"></ion-img>
+                        <button style="background:none;" onclick="alert('点击事件')">
+                            <ion-img src="./assets/icon/Coffee-Cup.png" class="align-center"></ion-img>
                             <div class="nav-title">今日头条</div>
                         </button>
                     </ion-col>
 
                     <ion-col>
-                        <button  style="background:none;">
-                            <ion-img  src="./assets/icon/Sticky-Notes.png" class="align-center"></ion-img>
+                        <button style="background:none;" onclick="alert('点击事件')">
+                            <ion-img src="./assets/icon/Sticky-Notes.png" class="align-center"></ion-img>
                             <div class="nav-title">今日头条</div>
                         </button>
                     </ion-col>
                 </ion-row>
+
             </ion-slide>
 
         </ion-slides>
-    </ion-row>
+
 
     <ion-row padding>
-        <ion-label class="label label-ios" style="text-align: center;">
+        <ion-label class="label label-ios foot-label">
             Powered By ch.ch@qq.com
         </ion-label>
 

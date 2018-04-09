@@ -37,7 +37,7 @@ export class LoginPage {
       alert("请输入密码");
     } else {
       let userinfo: string = '用户名：' + username.value + '密码：' + password.value;
-      //alert(userinfo);
+      console.log(userinfo);
       let modal = this.modalCtrl.create(TabsPage);
       modal.present();
     }

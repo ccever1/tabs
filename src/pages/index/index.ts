@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { AppConfig } from './../../app/app.config';
 
 /**
  * Generated class for the IndexPage page.
@@ -15,14 +17,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class IndexPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl:NavController) {
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IndexPage');
   }
-  logEvent(event) {
-    console.log(event)
-    alert('新闻');
+  logEvent(event,index:number,navParams) {
+    //console.log(event);
+    let tabIndex=this.navCtrl.getByIndex(index);
+    AppConfig.setTitle(navParams.name);
+    this.navCtrl.parent.select(index);
+    //this.navCtrl.push(HomePage,navParams);
   }
 }
