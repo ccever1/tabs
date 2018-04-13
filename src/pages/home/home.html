@@ -21,7 +21,33 @@
                 </ion-item>
         </ion-card>
     </div>
-    <ion-list *ngIf="title!='今日头条'&&title!='资讯'" class="list-ios">
+    <ion-content padding *ngIf="title=='公司简介'" style="text-align: center;">
+        <img src="./assets/img/zl.jpg">
+        <h1>关于我们</h1>
+
+        <p style="color: #8c8c8c;">
+            北京靠谱科技有限公司是一家专注于医药行业的知识产权服务公司，致力于为医药行业专业人士提供智能医学知识产权检索、分析、创意评估和转化服务。
+        </p>
+        <img  src="./assets/icon/user.png">
+        <h1>使命</h1>
+        <p style="color: #8c8c8c;">
+            引导技术创新、助力产业升级、保障全民健康
+        </p>
+        <img  src="./assets/icon/user.png">
+        <h1>愿景</h1>
+        <p style="color: #8c8c8c;">
+            打造全球化的专业生物医药知识产权平台
+        </p>
+        <img  src="./assets/icon/user.png">
+        <h1>价值</h1>
+        <p style="color: #8c8c8c;">
+            健全知识产权布局、加强知识产权保护、促进知识成果转化
+        </p>
+
+        <h2>关于我们</h2>
+
+    </ion-content>
+    <ion-list *ngIf="title!='今日头条'&&title!='资讯'&&'公司简介'!=title " class="list-ios">
         <ion-item *ngFor="let item of listData">
             <ion-avatar item-left>
                 <img src="./assets/icon/user.png">
