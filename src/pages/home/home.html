@@ -9,19 +9,16 @@
         <ion-card *ngFor="let item of listData">
             <img src="./assets/img/{{item?.img}}"/>
             <div class="card-title">{{item?.name}}</div>
-            <div class="card-subtitle">{{item?.email}}</div>
         </ion-card>
     </div>
     <div *ngIf="title=='资讯'">
         <img src="./assets/img/card-madison.png">
         <ion-card *ngFor="let item of listData">
-            <ion-item>
-                <ion-avatar item-start>
-                    <img src="./assets/icon/{{item?.icon}}">
-                </ion-avatar>
-                <h2>{{item?.name}}</h2>
+                <ion-item>
+                    <img style="width: 10rem;" item-left src="./assets/imgs/{{item?.slide}}">
+                <div style="white-space: normal;">{{item?.name}}</div>
                 <p>{{item?.email}}</p>
-            </ion-item>
+                </ion-item>
         </ion-card>
     </div>
     <ion-list *ngIf="title!='今日头条'&&title!='资讯'" class="list-ios">
